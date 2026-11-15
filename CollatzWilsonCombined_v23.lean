@@ -14806,14 +14806,12 @@ theorem P_levelC_padic_wilson_rg_unification
             (P_levelC (C.totalLevel N 0)
               (PadicWilsonBridge.liftPow 3 (C.totalLevel N 0) j
                 (by simp [PadicWilsonBridge.PadicWilsonFamily.totalLevel, hir0, huv, hN]) g))
-        else 0
+       else 0
       Filter.Tendsto (fun N => C.smear N 0 v (t N)) Filter.atTop
         (nhds (lam * C.smear j 0 v (PadicWilsonBridge.embed1Pt (C.totalLevel j 0)
           (PadicWilsonBridge.liftPow 3 (C.totalLevel j 0) j
             (by simp [PadicWilsonBridge.PadicWilsonFamily.totalLevel, hir0, huv]) g))))) := by
-  by
   first
   | exact PadicWilsonBridge.collatz_padic_wilson_rg_unification hj
   | simpa only [P_collatz_eq_P_levelC] using
       PadicWilsonBridge.collatz_padic_wilson_rg_unification hj
- -/
