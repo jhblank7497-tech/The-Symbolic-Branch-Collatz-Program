@@ -14777,7 +14777,6 @@ At every level `j ≥ 1`:
 3. **Wilson Continuum Limit:** For any 3-adic `PadicWilsonFamily 3 G` stabilized at scale `j`,
    the UV continuum limit (`N → ∞`) of a `P_levelC`-evolved eigenmode `g` with eigenvalue `λ`
    exists and equals `λ` times the coarse Wilson expectation of `g`.
--/
 theorem P_levelC_padic_wilson_rg_unification
     {j : ℕ} (hj : 1 ≤ j) :
     -- (1) Exact block-spin RG fixed point across levels
@@ -14813,5 +14812,3 @@ theorem P_levelC_padic_wilson_rg_unification
             (by simp [PadicWilsonBridge.PadicWilsonFamily.totalLevel, hir0, huv]) g))))) := by
   simpa only [P_collatz_eq_P_levelC] using
     (PadicWilsonBridge.collatz_padic_wilson_rg_unification hj)
--/
--/
