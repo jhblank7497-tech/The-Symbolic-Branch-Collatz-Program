@@ -14816,10 +14816,9 @@ theorem P_levelC_padic_wilson_rg_unification
   | simpa only [P_collatz_eq_P_levelC] using
       PadicWilsonBridge.collatz_padic_wilson_rg_unification hj
  
-end CollatzTransfer
-
 ...
 end PadicWilsonFamily
 
 -/
+
  
