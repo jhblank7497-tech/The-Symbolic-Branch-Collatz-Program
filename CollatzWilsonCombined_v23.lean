@@ -14814,5 +14814,4 @@ theorem P_levelC_padic_wilson_rg_unification
   first
   | exact PadicWilsonBridge.collatz_padic_wilson_rg_unification hj
   | simpa only [P_collatz_eq_P_levelC] using
-      PadicWilsonBridge.collatz_padic_wilson_rg_unification hj
--//////////////////////////////////////////////////////////////////////////////////
+      PadicWilsonBridge.collatz_padic_wilson_rg_unification hj -/
