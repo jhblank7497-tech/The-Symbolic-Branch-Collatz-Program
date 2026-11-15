@@ -11,8 +11,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install elan
         run: |
-          curl -sSfL https://lean-lang.org | sh -s -- -y --default-toolchain none
-          echo "$HOME/.elan/bin" >> $GITHUB_PATH
+          set -eux
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          bash /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Resolve dependencies and fetch Mathlib cache
         run: |
           export PATH="$HOME/.elan/bin:$PATH"
