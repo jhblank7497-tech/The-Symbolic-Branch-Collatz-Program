@@ -1,0 +1,11 @@
+name = "symbolic_branch_collatz"
+version = "0.1.0"
+defaultTargets = ["CollatzWilsonCombined_v23"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0"
+
+[[lean_lib]]
+name = "CollatzWilsonCombined_v23"
