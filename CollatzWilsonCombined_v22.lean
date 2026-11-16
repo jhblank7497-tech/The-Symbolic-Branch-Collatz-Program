@@ -14812,9 +14812,3 @@ theorem P_levelC_padic_wilson_rg_unification
       PadicWilsonBridge.collatz_padic_wilson_rg_unification hj
  
 end CollatzTransfer
-
-end
-
--- Jackie H. Blankenship (j) is responsible for this information.
--- j=sqrt-1
- 
